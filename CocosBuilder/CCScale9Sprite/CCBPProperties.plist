@@ -120,7 +120,7 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>Float</string>
+			<string>FloatScale</string>
 			<key>name</key>
 			<string>insetLeft</string>
 			<key>displayName</key>
@@ -128,7 +128,7 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>Float</string>
+			<string>FloatScale</string>
 			<key>name</key>
 			<string>insetTop</string>
 			<key>displayName</key>
@@ -136,7 +136,7 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>Float</string>
+			<string>FloatScale</string>
 			<key>name</key>
 			<string>insetRight</string>
 			<key>displayName</key>
@@ -144,7 +144,7 @@
 		</dict>
 		<dict>
 			<key>type</key>
-			<string>Float</string>
+			<string>FloatScale</string>
 			<key>name</key>
 			<string>insetBottom</string>
 			<key>displayName</key>
