@@ -167,6 +167,8 @@ static CocosBuilderAppDelegate* sharedAppDelegate;
 	
 	[director runWithScene:[CocosScene sceneWithAppDelegate:self]];
 	
+    [CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
+    
 	NSAssert( [NSThread currentThread] == [[CCDirector sharedDirector] runningThread], @"cocos2d shall run on the Main Thread. Compile CocosBuilder with CC_DIRECTOR_MAC_THREAD=2");
 }
 
