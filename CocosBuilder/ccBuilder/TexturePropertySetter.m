@@ -89,6 +89,15 @@
 
     // Actually set the sprite frame
     [node setValue:spriteFrame forKey:prop];
+    
+    if(![spriteFrame texture] && [node valueForKey:@"blendFunc"]) {
+        ccBlendFunc func;
+        func.src = CC_BLEND_SRC;
+        func.dst = CC_BLEND_DST;
+        
+        NSValue* blendValue = [NSValue value:&func withObjCType:@encode(ccBlendFunc)];
+        [node setValue:blendValue forKey:@"blendFunc"];
+    }
 }
 
 + (void) setTextureForNode:(CCNode*)node andProperty:(NSString*) prop withFile:(NSString*) spriteFile
